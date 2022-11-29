@@ -1,10 +1,9 @@
 const express = require('express');
 const session = require('express-session')
-const sequilize = require('sequelize');
 const bodyParser = require('body-parser');
 const path = require('path');
-const mainRoutes = require('./src/routes/login');
-const connection = require('./database/database');
+const mainRoutes = require('./routes/index');
+const connection = require('../database/database');
 
 const server = express();
 
@@ -14,6 +13,7 @@ server.use(bodyParser.json());
 
 //View engine
 server.set('view engine', 'ejs');
+server.set('views', path.join(__dirname, 'views'))
 
 //Static
 server.use(express.static(path.join(__dirname, '../public')));
