@@ -2,8 +2,10 @@ const express = require('express');
 const session = require('express-session')
 const bodyParser = require('body-parser');
 const path = require('path');
-const mainRoutes = require('./routes/index');
-const connection = require('../database/database');
+const connection = require('./database/database');
+
+const loginRouter = require('./login/LoginController');
+const Login = require('./login/Login');
 
 const server = express();
 
@@ -31,7 +33,7 @@ connection
     });
 
 //Rotas
-server.use(mainRoutes);
+server.use(loginRouter);
 
 
 server.listen(3000, () => {
