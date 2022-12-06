@@ -21,7 +21,12 @@ server.set('views', path.join(__dirname, 'views'))
 server.use(express.static(path.join(__dirname, '../public')));
 
 //Session
-server.use(session({secret:'aldsufhnçana'}));
+server.use(session({
+    secret: 'faosdjaosdjadsdad',
+    resave: true,
+    saveUninitialized: true,
+    cookie: {maxAge: 30000000}
+}));
 
 //Database
 connection
