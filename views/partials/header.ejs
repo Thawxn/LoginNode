@@ -4,6 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
     <title>Sistema de Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Kanit';
+        }
+        .conteiner{
+            background-image: linear-gradient(-45deg, rgb(0, 0, 0), rgb(19, 48, 12),rgb(34, 100, 14), rgb(5, 75, 20), rgb(9, 51, 16));
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .all{
+            width: 60%;
+            height: 350px;
+            display: flex;
+            border-radius: 35px;
+            box-shadow: 1px 1px 5px #000;
+        }
+        .rigth{
+            background-color: white;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 35px;
+            border-bottom-left-radius: 35px;
+            font-weight: 600;
+            font-size: 30px;
+            color: rgb(30, 116, 22);
+        }
+        .left{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+        button,
+        .button{
+            width: 150px;
+            height: 35px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px #000;
+            background-color: rgb(24, 173, 24);
+            text-transform: uppercase;
+            color: #fff;
+        }
+        button:hover,
+        .button:hover{
+            background-color: rgb(21, 85, 8);
+            cursor: pointer;
+        }
+        form{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .email,
+        .password{
+            width: 350px;
+            margin: 10px;
+            height: 35px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
 </head>

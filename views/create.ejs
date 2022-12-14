@@ -1,12 +1,19 @@
 <%- include ('partials/header.ejs') %>
 <body>
-    <h2>Faça o cadastro</h2>
-
-    <form method="post" action="/create">
-        <input type="text" name="email" placeholder="email@exemplo.com">
-        <input type="password" name="password" placeholder="*****">
-        <input type="submit" name="acao" value="Criar">
-    </form>
+    <div class="conteiner">
+        <div class="all">
+            <div class="rigth">
+                <h2>Faça o cadastro</h2>
+            </div>
+            <div class="left">
+                <form method="post" action="/create">
+                    <input type="text" name="email" placeholder="email@exemplo.com" class="email">
+                    <input type="password" name="password" placeholder="*****" class="password">
+                    <input type="submit" name="acao" value="Enviar" class="button">
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 
